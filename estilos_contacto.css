@@ -1,0 +1,84 @@
+.formulario_contacto {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    padding-right: 12%;
+    width: 85%;
+    max-width: 500px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    text-align: left;
+}
+
+.formulario_contacto h2 {
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+.formulario_contacto label {
+    display: block;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.formulario_contacto select,
+.formulario_contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.formulario_contacto input{
+    justify-content: left;
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: 'Arial', sans-serif;
+}
+
+
+
+.formulario_contacto fieldset {
+    border: none;
+    margin: 10px 0;
+    display: contents;
+}
+
+.formulario_contacto legend {
+    color: #4CAF50;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+
+
+.formulario_contacto button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.formulario_contacto button:hover {
+    background-color: #3e8e41;
+}
+
+/* Estilos para el resultado de la cuota */
+.resultado-cuota {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e7f4e4; /* Un tono claro que combina con el verde */
+    border-radius: 5px;
+    color: #555;
+    text-align: center;
+}

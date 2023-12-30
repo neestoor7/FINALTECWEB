@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecolux Energy: Precios</title>
     <link rel="stylesheet" href="estilos_precios.css">
-    <script src="script_precios.js"></script>
+    <link rel="stylesheet" href="estilos_contacto.css">
+    <script src="script_form.js"></script>
 </head>
 
 <body>
@@ -28,8 +29,8 @@
     </div>
 
     <main>
-        <h2>Contaca con nosotros aquí:</h2>
-        <form action="" method="" class="formulario_contacto">
+        <h2>Contáctanos y calcula tu cuota ahora:</h2>
+        <form id="formularioContacto" class="formulario_contacto">
             <div class="form-group">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required>
@@ -39,11 +40,35 @@
                 <input type="email" id="email" name="email" required>
             </div>
             <div class="form-group">
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
+                <label for="tipoServicio">Tipo de Servicio:</label>
+                <select id="tipoServicio" name="tipoServicio">
+                    <option value="residencial">Residencial</option>
+                    <option value="comercial">Comercial</option>
+                    <option value="industrial">Industrial</option>
+                </select>
             </div>
-            <button type="submit">Enviar</button>
+            <div class="form-group">
+                <label for="consumo">Consumo Mensual (kWh):</label>
+                <input type="number" id="consumo" name="consumo">
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Preferencias de Contacto:</legend>
+                    <label><input type="radio" name="preferenciaContacto" value="email"> Email</label>
+                    <label><input type="radio" name="preferenciaContacto" value="telefono"> Teléfono</label>
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <label><input type="checkbox" name="noticias" value="suscribirse"> Suscribirse al boletín </label>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" name="comentarios"></textarea>
+            </div>
+            <button type="submit">Calcular y Enviar</button>
         </form>
+        <div id="resultadoCuota" class="resultado-cuota"></div>
     </main>
 
 
@@ -53,6 +78,11 @@
 
 
 
+    <footer>
+        <div class="footer">
+            <p>&copy; 2023 Ecolux Energy | Dirección: Calle Principal, Valencia, España | Teléfono: +645 341 873 | Email: info@ecoluxenergy.com</p>
+        </div>
+    </footer>
 
 </body>
 </html>
