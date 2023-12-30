@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecolux Energy: Precios</title>
+    <title>Ecolux Energy: Contacto</title>
+    <link rel="icon" href="imagenes/logo.png" type="image/png">
     <link rel="stylesheet" href="./css/estilos_principal.css">
     <link rel="stylesheet" href="./css/estilos_contacto.css">
     <script src="./js/script_form.js"></script>
@@ -29,39 +30,48 @@
     </header>
  
 
-
-    <div id="formularios">
+    <div class="tablón">
         <div>
-            <h2>Contáctanos para más información:</h2>
+            <h1>Contáctanos para más información:</h1>
             <form id="formularioContacto" class="formulario_contacto">
-                <div class="form-group">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div>
+                <fieldset>
+                    <legend><h2>Datos personales:</h2></legend>
+                    <div >
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="number" id="telefono" name="telefono" required>
+                    </div>
+                </fieldset>
+                <div  id="Preferencias">
                     <fieldset>
-                        <legend>Preferencias de Contacto:</legend>
+                        <legend><h2>Preferencias de Contacto:</h2></legend>
                         <label><input type="radio" name="preferenciaContacto" value="email"> Email</label>
                         <label><input type="radio" name="preferenciaContacto" value="telefono"> Teléfono</label>
+                        <label><input type="checkbox" name="noticias" value="suscribirse"> Suscribirse al boletín</label>
                     </fieldset>
                 </div>
-                <div class="form-group">
-                    <label><input type="checkbox" name="noticias" value="suscribirse"> Suscribirse al boletín</label>
+                
+                <div>
+                    <fieldset>
+                        <label for="comentarios">Comentarios:</label>
+                        <textarea id="comentarios" name="comentarios"></textarea>
+                    </fieldset>
+                    
                 </div>
-                <div class="form-group">
-                    <label for="comentarios">Comentarios:</label>
-                    <textarea id="comentarios" name="comentarios"></textarea>
-                </div>
+
                 <button type="submit">Enviar</button>
             </form>
         </div>
     
         <div>
-            <h2>Calcula tu cuota ahora:</h2>
+            <h1>Calcula tu cuota ahora:</h1>
             <form id="formularioCalculoCuota" class="formulario_contacto">
                 <div class="form-group">
                     <label for="tipoServicioCalculo">Tipo de Servicio:</label>
@@ -81,7 +91,7 @@
         </div>
     </div>
     
-        
+
  
 
 
