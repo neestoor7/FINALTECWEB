@@ -73,12 +73,19 @@
     background-color: #3e8e41;
 }
 
-/* Estilos para el resultado de la cuota */
+
 .resultado-cuota {
     margin-top: 20px;
     padding: 10px;
-    background-color: #e7f4e4; /* Un tono claro que combina con el verde */
+    background-color: #e7f4e4; 
     border-radius: 5px;
     color: #555;
     text-align: center;
+}
+
+#formularios {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 150px; 
 }
