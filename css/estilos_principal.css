@@ -1,3 +1,5 @@
+
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
@@ -8,6 +10,8 @@ body {
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .barra_nav {

@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecolux Energy: Inicio</title>
-    <link rel="icon" href="imagenes/logo.png" type="image/png">
-    <link rel="stylesheet" href="./css/estilos_principal.css">
+    <title>Ecolux Energy: Precios</title>
+    <link rel="stylesheet" href="css/estilos_index.css">
+    <link rel="stylesheet" href="css/estilos_principal.css">
 </head>
 
 <body>
     <header>
         <div class="header">
-            <img src="./imagenes/logo.png" alt="Logo de Ecolux Energy" class="logo">
+            <img src="imagenes/logo.png" alt="Logo de Ecolux Energy" class="logo">
             <div class="header-text">
                 <h1>Ecolux Energy</h1>
                 <p class="lema">Tu compañía de electricidad, y cada día, la de más gente</p>
@@ -23,10 +23,97 @@
             <a href="./contacto.html">Contáctanos</a>
             <a href="./precios.html">Tarifas</a>
             <a href="./instalaciones.html">Nuestras Instalaciones</a>
+            <a href="./cuota.html">Calcula tu cuota</a>
         </div>
         <hr>
     </header>
- 
 
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="slide"><img class="slider" src="imagenes/slider1.jpg" alt="Imagen 1"></div>
+            <div class="slide"><img class="slider" src="imagenes/slider2.jpg" alt="Imagen 2"></div>
+            <div class="slide"><img class="slider" src="imagenes/slider3.jpg" alt="Imagen 3"></div>
+        </div>
+        <button class="prev-btn" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next-btn" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+    <div class="contenedor1">
+        <div>
+            <img src="imagenes/hucha.png" alt="Ahorro">
+            <p><b>Precios justos</b></p>
+            <p>Precios transparentes y facturas claras, basados en el coste real de la energía.</p>
+        </div>
+        <div>
+            <img src="imagenes/planeta.png" alt="Planeta">
+            <p><b>Obtén energía 100% verde</b></p>
+            <p>Toda nuestra energía proviene de fuentes renovables que cuidan del planeta.</p>
+        </div>
+        <div>
+            <img src="imagenes/sac.png" alt="Atención al Cliente">
+            <p><b>Una atención de 5 estrellas</b></p>
+            <p>Recibe una atención al cliente excepcional de nuestros mejores profesionales en el sector.</p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <div class="contenedor2">
+        <div class="separador">
+        <img src="imagenes/calculadoras.jpg" alt="Imagen calculadora" class="imag img_par">
+        <p class="texto_par">Calculadora Consumo Mensual</p>
+        <a href="contacto.html"><button class="boton boton_par">Ver Más</button></a>
+        </div>
+        <div class="separador">
+        <img src="imagenes/servicio.png" alt="Imagen servicios" class="imag img_impar">
+        <p class="texto_impar">Servicios</p>
+        <a href="precios.html"><button class="boton boton_impar">Ver Más</button></a>
+        </div>
+        <div class="separador">
+        <img src="imagenes/instalacion.jpg" alt="Imagen instalaciones" class="imag img_par">
+        <p class="texto_par">Nuestras Instalaciones</p>
+        <a href="instalaciones.html"><button class="boton boton_par">Ver Más</button></a>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <section class="opiniones">
+        <h2>Opiniones de Nuestros Clientes</h2>
+    
+        <div class="opinion">
+            <img src="imagenes/usuaria.png" alt="Cliente 1">
+            <p>"Estoy muy satisfecho con los servicios de Ecolux Energy. ¡Energía limpia y atención al cliente excepcional!"</p>
+            <p><b>- Núria Martínez</b></p>
+        </div>
+    
+        <div class="opinion">
+            <img src="imagenes/usuario.png" alt="Cliente 2">
+            <p>"La transición a la energía renovable fue fácil con Ecolux Energy. Recomiendo sus servicios a todos."</p>
+            <p><b>- Mario Pérez</b></p>
+        </div>
+
+        <div class="opinion">
+            <img src="imagenes/usuario.png" alt="Cliente 3">
+            <p>"Excelente empresa. Su compromiso con la sostenibilidad es impresionante. ¡Gracias por hacer la diferencia!"</p>
+            <p><b>- Sergio Hernández</b></p>
+        </div>
+    </section>
+    
+    <script src="js/script_principal.js"></script>
+
+    <footer>
+        <div class="footer">
+            <p>&copy; 2023 Ecolux Energy | Dirección: Calle Principal, Valencia, España | Teléfono: +645 341 873 | Email: info@ecoluxenergy.com</p>
+        </div>
+    </footer>
 </body>
 </html>
