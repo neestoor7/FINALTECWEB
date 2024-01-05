@@ -1,15 +1,14 @@
 .formulario_contacto {
     background-color: #fff;
+    align-items: center;
     border-radius: 10px;
     padding: 20px;
-    padding-right: 12%;
-    width: 85%;
-    max-width: 500px;
     margin-top: 20px;
     margin-bottom: 100px;
     text-align: center;
     border: 2px solid #4CAF50;;
 }
+
 
 .formulario_contacto h2 { 
     margin-bottom: 15px;
@@ -96,4 +95,10 @@
     border-radius: 8px;
     margin: 20px;
     padding: 20px;
+}
+
+#comentarios {
+    width: 95%;
+
+
 }
