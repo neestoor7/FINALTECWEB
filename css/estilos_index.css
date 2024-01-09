@@ -1,11 +1,11 @@
-.carousel-container {
+.contenedor-carrusel {
     position: relative;
     width: 90%;
     margin: 50px auto;
     overflow: hidden;
 }
 
-.carousel {
+.carrusel {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }

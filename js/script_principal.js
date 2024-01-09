@@ -5,7 +5,7 @@ function changeSlide(n) {
 }
 
 function showSlide(index) {
-    const slides = document.querySelector('.carousel');
+    const slides = document.querySelector('.carrusel');
     
     if (index < 0) {
         currentIndex = slides.children.length - 1;
