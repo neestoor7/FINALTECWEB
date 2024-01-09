@@ -1,20 +1,20 @@
-let currentIndex = 0;
+let indexActual = 0;
 
-function changeSlide(n) {
-    showSlide(currentIndex += n);
+function cambiarSlider(n) {
+    mostrarSlider(indexActual += n);
 }
 
-function showSlide(index) {
+function mostrarSlider(index) {
     const slides = document.querySelector('.carrusel');
     
     if (index < 0) {
-        currentIndex = slides.children.length - 1;
+        indexActual = slides.children.length - 1;
     } else if (index >= slides.children.length) {
-        currentIndex = 0;
+        indexActual = 0;
     } else {
-        currentIndex = index;
+        indexActual = index;
     }
 
-    slides.style.transform = `translateX(${-currentIndex * 100}%)`;
+    slides.style.transform = `translateX(${-indexActual * 100}%)`;
 }
 
