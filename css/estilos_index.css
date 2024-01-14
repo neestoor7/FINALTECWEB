@@ -198,3 +198,86 @@
     border-radius: 50%;
     margin-bottom: 10px;
 }
+
+aside {
+    width: 190px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 15%;
+    background-color: #f4f4f4;
+    padding: 9px;
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+}
+
+aside h2 {
+    color: #4CAF50;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+aside a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #4CAF50;
+    color: #4CAF50;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    border-radius: 25px;
+    margin: 10px auto;
+}
+
+aside a:hover {
+    background-color: #4CAF50;
+    color: white;
+    border-color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#publicidad {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 450px;
+    background-color: #f4f4f4;
+    padding: 9px;
+    border: 2px solid #4CAF50;
+    color: #555;
+}
+
+#imgpubli {
+    width: 250px;
+    height: 400px;
+}
+
+#divpubli {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#cerrarPublicidad {
+    background-color: #4CAF50;
+    color: #fff;
+    border: 2px solid #4CAF50;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin-top: 15px;
+}

@@ -18,3 +18,8 @@ function mostrarSlider(index) {
     slides.style.transform = `translateX(${-indexActual * 100}%)`;
 }
 
+var xpubli = document.getElementById('cerrarPublicidad');
+function adiospubli () {
+    document.getElementById('publicidad').style.display = 'none'
+}
+xpubli.onclick = adiospubli
