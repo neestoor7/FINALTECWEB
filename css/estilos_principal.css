@@ -181,3 +181,8 @@ footer {
 #grande {
     font-size: 25px
 }
+
+.bordecillo {
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+}

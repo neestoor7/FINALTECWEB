@@ -54,21 +54,31 @@
         </div>
 
         <h1>Compara nuestra energía</h1>
-        <h3>Arrastra la bombilla a cada hueco para más información</h2>
+        <div class="bordecillo">
+            <h3>Arrastra la bombilla a cada hueco para más información</h2>
 
-        <div id="bombillas">
-            <div id="hueco1" class="hueco" ondrop="soltar(event)" ondragover="permitirSoltar(event)">
-                <img class="imgempresas" src="imagenes/sinenergia.png">
+            <div id="bombillas">
+                <div id="hueco1" class="hueco" ondrop="soltar(event)" ondragover="permitirSoltar(event)">
+                    <img class="imgempresas" src="imagenes/sinenergia.png">
+                    <figcaption><b>Sin Suministro Eléctrico</b></figcaption>
+                </div>
+                <div id="hueco2" class="hueco" ondrop="soltar(event)" ondragover="permitirSoltar(event)">
+                    <img class="imgempresas" src="imagenes/otraempresa.png">
+                    <figcaption><b>Empresa Convencional</b></figcaption>
+                </div>
+                <div id="hueco3" class="hueco" ondrop="soltar(event)" ondragover="permitirSoltar(event)">
+                    <img class="imgempresas" src="imagenes/logo.png">
+                    <figcaption><b>Con Ecolux Energy</b></figcaption>
+                </div>
             </div>
-            <div id="hueco2" class="hueco" ondrop="soltar(event)" ondragover="permitirSoltar(event)">
-                <img class="imgempresas" src="imagenes/otraempresa.png">
+
+            <div>
+                <img id="bombilla" src="imagenes/bombi1.png" alt="Bombilla Apagada" draggable="true" ondragstart="iniciarArrastre(event)">
             </div>
-            <div id="hueco3" class="hueco" ondrop="soltar(event)" ondragover="permitirSoltar(event)">
-                <img class="imgempresas" src="imagenes/logo.png">
-            </div>
-            <img id="bombilla" src="imagenes/bombi1.png" alt="Bombilla Apagada" draggable="true" ondragstart="iniciarArrastre(event)">
         </div>
-
+        <br>
+        <br>
+        <br>
         <br>
         <br>
 

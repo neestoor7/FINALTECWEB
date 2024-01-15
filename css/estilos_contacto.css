@@ -105,13 +105,13 @@
 #bombillas {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 8px;
     margin-top: 20px;
 }
 
 .hueco {
-    width: 100%;
-    height: 150px;
+    width: 95%;
+    height: 200px;
     border: 2px solid #ccc;
     text-align: center;
 }
@@ -121,7 +121,8 @@
     height: 240px;
 }
 
+
 .imgempresas {
-    width: 100%;
-    height: 150px;
+    width: 180px;
+    height: 180px;
 }
