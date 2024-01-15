@@ -26,7 +26,28 @@ body {
     text-decoration: none;
     margin: 0 15px;
     font-size: 16px;
-}
+    position: relative;
+    display: inline-block;
+  }
+  
+  .barra_nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px; 
+    bottom: 0;
+    left: 50%;
+    background-color: #fff;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .barra_nav a:hover::after {
+    visibility: visible;
+    width: 100%;
+    left: 0;
+  }
+  
 
 .tablón {
     background-color: #fff;
