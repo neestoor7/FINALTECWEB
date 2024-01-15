@@ -55,7 +55,7 @@
 
         <h1>Compara nuestra energía</h1>
         <div class="bordecillo">
-            <h3>Arrastra la bombilla a cada hueco para más información</h2>
+            <h3>Arrastra la bombilla a cada hueco para más información</h3>
 
             <div id="bombillas">
                 <div id="hueco1" class="hueco" ondrop="soltar(event)" ondragover="permitirSoltar(event)">
@@ -75,6 +75,22 @@
             <div>
                 <img id="bombilla" src="imagenes/bombi1.png" alt="Bombilla Apagada" draggable="true" ondragstart="iniciarArrastre(event)">
             </div>
+
+            <div id="tablaempresa">
+                <table>
+                    <tr>
+                        <th>Empresa</th>
+                        <th>Precio</th>
+                        <th>Energía</th>
+                    </tr>
+                    <tr>
+                        <td id="nombreEmpresa">Sin suministro</td>
+                        <td id="precioEmpresa">-</td>
+                        <td id="energiaEmpresa">-</td>
+                    </tr>
+                </table>
+            </div>
+
         </div>
         <br>
         <br>

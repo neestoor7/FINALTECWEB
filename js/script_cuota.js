@@ -3,7 +3,13 @@ function iniciarArrastre(event) {
 }
 
 function permitirSoltar(event) {
-    event.preventDefault(); // Permite que los elementos se puedan soltar en los huecos
+    event.preventDefault();
+}
+
+function actualizarInfoEmpresa(empresa, precio, energia) {
+    document.getElementById("nombreEmpresa").innerText = empresa;
+    document.getElementById("precioEmpresa").innerText = precio;
+    document.getElementById("energiaEmpresa").innerText = energia;
 }
 
 function soltar(event) {
@@ -11,23 +17,24 @@ function soltar(event) {
     var data = event.dataTransfer.getData("text");
     var bombilla = document.getElementById(data);
 
-    // Asegúrate de que la acción de soltar ocurra en un hueco y no en una imagen u otro elemento
     var hueco = event.target;
     if (hueco.className === "hueco" || hueco.className === "imgempresas") {
-        // Si se suelta sobre una imagen dentro del hueco, selecciona el contenedor hueco
         if (hueco.className === "imgempresas") {
             hueco = hueco.parentNode;
         }
 
-        switch(hueco.id) {
+        switch (hueco.id) {
             case "hueco1":
-                bombilla.src = "imagenes/bombi1.png"; // Se queda igual
+                bombilla.src = "imagenes/bombi1.png";
+                actualizarInfoEmpresa("Sin suministro", "-", "-");
                 break;
             case "hueco2":
-                bombilla.src = "imagenes/bombi2.png"; // Cambia a bombi2.png
+                bombilla.src = "imagenes/bombi2.png";
+                actualizarInfoEmpresa("Empresa Convencional", "50€/mes", "Energía NO Renovable");
                 break;
             case "hueco3":
-                bombilla.src = "imagenes/bombi3.png"; // Cambia a bombi3.png
+                bombilla.src = "imagenes/bombi3.png";
+                actualizarInfoEmpresa("Con Ecolux Energy", "60€-80€/mes", "Energía Renovable");
                 break;
         }
     }

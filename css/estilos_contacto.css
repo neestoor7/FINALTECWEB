@@ -111,9 +111,10 @@
 
 .hueco {
     width: 95%;
-    height: 200px;
+    height: 220px;
     border: 2px solid #ccc;
     text-align: center;
+    background-color: #e7f4e4;
 }
 
 #bombilla {
@@ -125,4 +126,16 @@
 .imgempresas {
     width: 180px;
     height: 180px;
+}
+
+#tablaempresa {
+    margin: 20px;
+    border: 2px solid #ccc;
+    background-color: #e7f4e4;
+}
+
+#tablaempresa td {
+    text-align: center;
+    width: 15%;
+    height: 50px;
 }
