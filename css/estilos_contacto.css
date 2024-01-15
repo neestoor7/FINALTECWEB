@@ -100,5 +100,28 @@
 #comentarios {
     width: 95%;
 
+}
 
+#bombillas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.hueco {
+    width: 100%;
+    height: 150px;
+    border: 2px solid #ccc;
+    text-align: center;
+}
+
+#bombilla {
+    width: 150px;
+    height: 240px;
+}
+
+.imgempresas {
+    width: 100%;
+    height: 150px;
 }
