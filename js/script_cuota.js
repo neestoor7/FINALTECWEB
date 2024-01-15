@@ -30,11 +30,11 @@ function soltar(event) {
                 break;
             case "hueco2":
                 bombilla.src = "imagenes/bombi2.png";
-                actualizarInfoEmpresa("Empresa Convencional", "50€/mes", "Energía NO Renovable");
+                actualizarInfoEmpresa("Empresa Convencional", "60€-80€/mes", "Energía NO Renovable");
                 break;
             case "hueco3":
                 bombilla.src = "imagenes/bombi3.png";
-                actualizarInfoEmpresa("Con Ecolux Energy", "60€-80€/mes", "Energía Renovable");
+                actualizarInfoEmpresa("Con Ecolux Energy", "50€/mes", "Energía Renovable");
                 break;
         }
     }

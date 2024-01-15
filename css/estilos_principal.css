@@ -29,7 +29,8 @@ body {
     position: relative;
     display: inline-block;
   }
-  
+
+
   .barra_nav a::after {
     content: '';
     position: absolute;
@@ -185,4 +186,5 @@ footer {
 .bordecillo {
     border: 2px solid #4CAF50;
     border-radius: 8px;
+    padding-left: 5px;
 }

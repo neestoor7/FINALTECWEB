@@ -4,12 +4,15 @@
     border-radius: 10px;
     padding: 20px;
     margin-top: 20px;
-    margin-bottom: 100px;
+    margin-bottom: 90px;
     text-align: center;
     border: 2px solid #4CAF50;;
 }
 
-
+hr {
+    border-color: lightgreen;
+}
+  
 .formulario_contacto h2 { 
     margin-bottom: 15px;
 }
