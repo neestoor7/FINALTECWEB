@@ -153,7 +153,7 @@ footer {
 .beneficios table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 10px; /* Ajusta según sea necesario */
+    margin-top: 10px;
 }
 
 .beneficios table, .beneficios table td {
